@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -10,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="inline-block">
-              <span className="text-xl font-bold gradient-text">Dev<span className="text-primary">Virtuoso</span></span>
+              <span className="text-xl font-bold gradient-text">John<span className="text-primary">Smith</span></span>
             </a>
             <p className="mt-2 text-foreground/70 max-w-md">
               Building innovative solutions with cutting-edge technologies.
@@ -52,7 +51,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
             <p className="text-foreground/60 text-sm">
-              © {currentYear} DevVirtuoso. All rights reserved.
+              © {currentYear} JohnSmith. All rights reserved.
             </p>
           </div>
         </div>

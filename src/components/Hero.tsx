@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -13,20 +12,20 @@ const Hero: React.FC = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           <div className="lg:col-span-3 space-y-6 animate-fade-in">
-            <div>
+            <div className="animate-[fade-in_0.3s_ease-out_0.1s]">
               <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
                 7+ Years of Experience
               </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-              <span className="block">Seasoned Developer &</span>
-              <span className="gradient-text">Technical Architect</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight animate-[fade-in_0.3s_ease-out_0.2s]">
+              <span className="block">Hi, I'm John Smith</span>
+              <span className="gradient-text">Full Stack Developer</span>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
+            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl animate-[fade-in_0.3s_ease-out_0.3s]">
               Specializing in building exceptional digital experiences with expertise in 
               AI, Full Stack, Cloud & DevOps, Mobile Development, and UI/UX design.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 animate-[fade-in_0.3s_ease-out_0.4s]">
               <Button size="lg" className="group">
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -36,7 +35,7 @@ const Hero: React.FC = () => {
               </Button>
             </div>
             
-            <div className="pt-10">
+            <div className="pt-10 animate-[fade-in_0.3s_ease-out_0.5s]">
               <p className="text-sm text-foreground/60 mb-4">Trusted by leading brands</p>
               <div className="flex flex-wrap gap-8 items-center">
                 <div className="h-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
@@ -62,7 +61,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 flex justify-center animate-fade-in">
+          <div className="lg:col-span-2 flex justify-center animate-[fade-in_0.3s_ease-out_0.6s]">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-20 blur-2xl"></div>
               <div className="relative w-full h-full rounded-full bg-muted flex items-center justify-center overflow-hidden border-2 border-primary/10">

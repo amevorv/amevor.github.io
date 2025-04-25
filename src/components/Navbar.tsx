@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -30,10 +29,9 @@ const Navbar: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-xl font-bold gradient-text">Dev<span className="text-primary">Virtuoso</span></span>
+          <span className="text-xl font-bold gradient-text">John<span className="text-primary">Smith</span></span>
         </a>
         
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <a 
@@ -47,7 +45,6 @@ const Navbar: React.FC = () => {
           <Button className="ml-4">Get in Touch</Button>
         </nav>
         
-        {/* Mobile Navigation Toggle */}
         <button 
           className="md:hidden text-foreground p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -58,7 +55,6 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-md p-4 animate-fade-in">
           <nav className="flex flex-col gap-2">
