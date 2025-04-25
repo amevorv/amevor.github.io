@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
@@ -7,6 +8,12 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // After mounting, we can safely access the theme
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,10 +57,15 @@ const Navbar: React.FC = () => {
             size="icon" 
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="ml-2"
+            aria-label="Toggle dark mode"
           >
-            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
+            {mounted && (
+              <>
+                <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <span className="sr-only">Toggle theme</span>
+              </>
+            )}
           </Button>
           <Button className="ml-4">Get in Touch</Button>
         </div>
@@ -86,10 +98,15 @@ const Navbar: React.FC = () => {
                 variant="ghost" 
                 size="icon" 
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                aria-label="Toggle dark mode"
               >
-                <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
+                {mounted && (
+                  <>
+                    <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                    <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                    <span className="sr-only">Toggle theme</span>
+                  </>
+                )}
               </Button>
               <Button className="flex-1">Get in Touch</Button>
             </div>
