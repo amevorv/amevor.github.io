@@ -103,14 +103,23 @@ export default {
             transform: "translate(0px, 0px) scale(1)",
           },
           "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
+            transform: "translate(30px, -50px) scale(1.2)",
           },
           "66%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
+            transform: "translate(-20px, 20px) scale(0.8)",
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
           },
+        },
+        floating: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
         }
       },
       animation: {
@@ -118,7 +127,9 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-up': 'slide-up 0.5s ease-out',
         'fade-in': 'fade-in 0.5s ease-out',
-        blob: "blob 7s infinite",
+        blob: "blob 10s infinite",
+        float: "floating 3s ease-in-out infinite",
+        pulse: "pulse 2s ease-in-out infinite",
       },
       utilities: {
         ".animation-delay-2000": {
@@ -126,6 +137,12 @@ export default {
         },
         ".animation-delay-4000": {
           "animation-delay": "4s",
+        },
+        ".animation-delay-6000": {
+          "animation-delay": "6s",
+        },
+        ".animation-delay-8000": {
+          "animation-delay": "8s",
         },
       },
     }

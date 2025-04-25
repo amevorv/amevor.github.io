@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -6,14 +7,14 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center section-padding pt-24">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[50vh] bg-gradient-to-br from-primary/5 to-accent/5 rounded-b-[100%] transform scale-125"></div>
+        <div className="absolute top-0 left-0 right-0 h-[50vh] bg-gradient-to-br from-primary/10 to-accent/10 rounded-b-[100%] transform scale-125 dark:from-primary/20 dark:to-accent/20"></div>
       </div>
       
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           <div className="lg:col-span-3 space-y-6 animate-fade-in">
             <div className="animate-[fade-in_0.3s_ease-out_0.1s]">
-              <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+              <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-pulse">
                 7+ Years of Experience
               </span>
             </div>
@@ -26,11 +27,13 @@ const Hero: React.FC = () => {
               AI, Full Stack, Cloud & DevOps, Mobile Development, and UI/UX design.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 animate-[fade-in_0.3s_ease-out_0.4s]">
-              <Button size="lg" className="group">
-                View Projects
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button size="lg" className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary transition-all duration-500">
+                <span className="relative z-10 flex items-center">
+                  View Projects
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" className="group border-primary/50 hover:border-primary">
                 Download Resume
               </Button>
             </div>
@@ -38,22 +41,22 @@ const Hero: React.FC = () => {
             <div className="pt-10 animate-[fade-in_0.3s_ease-out_0.5s]">
               <p className="text-sm text-foreground/60 mb-4">Trusted by leading brands</p>
               <div className="flex flex-wrap gap-8 items-center">
-                <div className="h-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <div className="h-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all float">
                   <svg className="h-full" viewBox="0 0 127.67 36.69" fill="currentColor">
                     <path d="M36.72,8.49h3.51v21.7h-3.51Zm17.59,7.59a6.42,6.42,0,0,0-4.42-1.77c-3.66,0-6.4,2.79-6.4,6.56s2.74,6.52,6.4,6.52a6.48,6.48,0,0,0,4.42-1.72v1.54h3.5V14.79h-3.5Zm0,8.13a3.91,3.91,0,0,1-3.32,1.77c-2.23,0-3.87-1.45-3.87-3.11s1.64-3.17,3.87-3.17a3.89,3.89,0,0,1,3.32,1.78Zm9.76-15.72h3.5v21.7h-3.5Zm17.59,7.59a6.42,6.42,0,0,0-4.42-1.77c-3.66,0-6.4,2.79-6.4,6.56s2.74,6.52,6.4,6.52a6.48,6.48,0,0,0,4.42-1.72v1.54h3.5V14.79h-3.5Zm0,8.13a3.93,3.93,0,0,1-3.33,1.77c-2.22,0-3.87-1.45-3.87-3.11s1.65-3.17,3.87-3.17a3.91,3.91,0,0,1,3.33,1.78ZM106,20.94c0-3.77-2.74-6.52-6.6-6.52-4.09,0-6.59,3-6.59,6.56s2.48,6.52,6.73,6.52a8.07,8.07,0,0,0,5.51-1.95L103.33,23a4.08,4.08,0,0,1-3.06,1.36,3.34,3.34,0,0,1-3.46-2.81h9.15C106,21.34,106,21.14,106,20.94Zm-9.16-.8a3.18,3.18,0,0,1,3.33-2.67A3,3,0,0,1,103.37,20.14Zm8.57-11.65h3.51v21.7h-3.51Zm8.49,0h3.5V30.19h-3.5Zm-87.62,15a4.46,4.46,0,0,1,.52-6.28L12,2.69A4.45,4.45,0,0,1,18.3,3.19a4.46,4.46,0,0,1-.51,6.28L2.57,23.92A4.44,4.44,0,0,1,0,24.47a4.45,4.45,0,0,1-3.73-2Zm9.27,9.58a4.44,4.44,0,0,1,.51-6.27L40.31,12.2a4.45,4.45,0,1,1,5.77,6.79L31.86,33.49a4.44,4.44,0,0,1-3.14,1.3,4.42,4.42,0,0,1-3.12-1.27Zm-2.65-8.88a4.44,4.44,0,0,1,.52-6.28L18.67,9.37a4.45,4.45,0,1,1,5.77,6.8L9.18,24.69a4.46,4.46,0,0,1-3.14,1.3,4.47,4.47,0,0,1-3.13-1.27Z" transform="translate(4.47 1.9)"/>
                   </svg>
                 </div>
-                <div className="h-6 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <div className="h-6 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all float-delay-1">
                   <svg className="h-full" viewBox="0 0 118.69 36" fill="currentColor">
                     <path d="M22.48,0a7.5,7.5,0,0,0-3.73,1A7.76,7.76,0,0,0,16,3.73,8.62,8.62,0,0,0,15.24,7a1.21,1.21,0,0,0,.34.85,1.14,1.14,0,0,0,.86.37,1.17,1.17,0,0,0,.83-.33,1.13,1.13,0,0,0,.37-.83,6,6,0,0,1,.57-2.36A5.08,5.08,0,0,1,19.6,3a5,5,0,0,1,1.65-1.1A4.67,4.67,0,0,1,23,1.54a4.73,4.73,0,0,1,1.71.33A5.14,5.14,0,0,1,26.38,3a4.93,4.93,0,0,1,1.11,1.67,4.59,4.59,0,0,1,.31,1.7,5.2,5.2,0,0,1-.35,1.73A5.35,5.35,0,0,1,26.39,10a5.82,5.82,0,0,1-1.66,1.17c-.65.3-1.27.59-1.86.86a7.39,7.39,0,0,0-1.86,1.17,7,7,0,0,0-1.52,1.86A9.11,9.11,0,0,0,18.31,19a1.14,1.14,0,0,0,.35.83,1.17,1.17,0,0,0,.83.33,1.14,1.14,0,0,0,.85-.34A1.13,1.13,0,0,0,20.7,19a6.84,6.84,0,0,1,.53-2.36,5.63,5.63,0,0,1,1.17-1.67,5.54,5.54,0,0,1,1.64-1.1c.61-.28,1.22-.56,1.86-.86A7.84,7.84,0,0,0,28,11.84,8,8,0,0,0,29.56,10a7.87,7.87,0,0,0,1.06-2.24A7.51,7.51,0,0,0,31,5.29a7.23,7.23,0,0,0-.64-3A7.47,7.47,0,0,0,28.56,0a7.18,7.18,0,0,0-3-.63,8.05,8.05,0,0,0-3,.63M7,35.31a.93.93,0,0,0,.68.28A1,1,0,0,0,8.33,35a.93.93,0,0,0-.28-.68l-6-6.23L8,21.87a.87.87,0,0,0,.28-.68,1,1,0,0,0-.29-.7,1,1,0,0,0-1.4,0l-6.23,6.23a1,1,0,0,0,0,1.4ZM19.77,20.49a1,1,0,0,0-.68.29,1,1,0,0,0,0,1.4l6.23,6.23-6.19,6.22a1,1,0,0,0,0,1.4,1,1,0,0,0,.7.28.93.93,0,0,0,.68-.28l6.9-6.94a1,1,0,0,0,0-1.38l-6.94-6.93a1,1,0,0,0-.68-.29M107.76,25.05V11.57a.86.86,0,0,1,.86-.85h2.3a.85.85,0,0,1,.85.85V25.05c0,2.36,1.34,3.38,3,3.38s3.08-1,3.08-3.37V11.57a.86.86,0,0,1,.86-.85H121a.84.84,0,0,1,.84.85V25.05c0,5-2.84,7.34-7.24,7.34s-6.8-2.36-6.8-7.34M89.56,19.07h6.34c-.18-2.78-2.11-3.08-3.09-3.08s-3.08.4-3.25,3.08m9.12,2.89h.62a.85.85,0,0,0,.85-.85v-.35c0-5.75-3.07-10.27-9.4-10.27s-9.21,4.12-9.21,11c0,7.33,3.47,10.89,9.65,10.89a14.24,14.24,0,0,0,7.93-2.22.85.85,0,0,0,.39-.78,1,1,0,0,0-.56-.74l-1.07-.61a.84.84,0,0,0-1,.1,9.7,9.7,0,0,1-5.35,1.5c-3.67,0-5.91-2.17-6.09-6.39a1.19,1.19,0,0,1,1.19-1.26M71.29,25.75l-5.8-14A1,1,0,0,0,64.58,11h0a.94.94,0,0,0-.9.71l-5.33,14a.5.5,0,0,1-.47.33.51.51,0,0,1-.48-.33l-5.33-14a.94.94,0,0,0-.9-.71h0a.94.94,0,0,0-.91.71l-5.8,14A13.73,13.73,0,0,0,44,29.32a.86.86,0,0,0,.81.58h1.85a.87.87,0,0,0,.83-.62L51.68,18a.38.38,0,0,1,.36-.27.37.37,0,0,1,.36.26L56.86,29a1,1,0,0,0,.83.66h.52a.89.89,0,0,0,.83-.67L63.51,18a.37.37,0,0,1,.36-.26.36.36,0,0,1,.36.27L68.44,29.3a.87.87,0,0,0,.82.62h1.85a.89.89,0,0,0,.83-.58,13.73,13.73,0,0,0-.65-3.57M83.61,21.51c0-4.52-2.78-7.64-6.67-7.64A6.16,6.16,0,0,0,71.47,16V11.57a.87.87,0,0,0-.87-.85h-2.3a.85.85,0,0,0-.85.85V31.49a.85.85,0,0,0,.85.85h2.3a.87.87,0,0,0,.87-.85V27a5.67,5.67,0,0,0,5.47,2.48c3.89,0,6.67-3,6.67-8M79.7,21.58c0,3-1.28,4.54-3.47,4.54s-4-.88-4-3.86V20c0-2.79,1.77-3.68,4-3.68,2.19,0,3.47,1.44,3.47,4.21Z"/>
                   </svg>
                 </div>
-                <div className="h-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <div className="h-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all float-delay-2">
                   <svg className="h-full" viewBox="0 0 1000 311.06" fill="currentColor">
                     <path d="M245.91,311.06c-52.29,0-100.26-28.27-125.56-73.9a144,144,0,0,1-15-65.66c1.16-79.73,66.06-144.63,145.7-145.7,42,0,81.5,16.63,111.24,46.93A156.15,156.15,0,0,1,391.84,157a156.59,156.59,0,0,1-36,103.08c-27.12,31.8-66.62,50.94-109.94,50.94m0-265.8a121.72,121.72,0,0,0-86.09,35.35,121.56,121.56,0,0,0-35.88,91c.58,66.7,55.63,121.18,121.76,121.76,67.83,0,123.46-55.63,123.46-123.46,0-67.25-55.63-124.6-123.26-124.6m147,67.82a88.06,88.06,0,1,1,88.06,88.05,88.14,88.14,0,0,1-88.06-88.05m44,0A44,44,0,1,0,481,69.08a44.07,44.07,0,0,0-44,44m-315.1,0a88.06,88.06,0,1,1-88-88.05,88.05,88.05,0,0,1,88,88.05m-44,0a44,44,0,1,0-44,44,44,44,0,0,0,44-44M880.26,269V125.33H836.19v22.33c-8.13-12.2-25.38-26.4-58.56-26.4-55.63,0-99.11,43.84-99.11,98.89s45.35,98.9,99.11,98.9c33.18,0,50.43-14.2,58.56-26.41V269ZM780.1,276.73c-32.6,0-59-24.47-59-57.64s26.41-57.65,59-57.65,59,24.47,59,57.65-25.84,57.64-59,57.64M672.58,180.41c0-34.75-26.4-59.14-64.28-59.14-37.28,0-65.55,26-65.55,62.7V269h44.78v-78.5c0-15.36,10.14-28.7,27.7-28.7,15.93,0,25.49,9.56,25.49,27.67v79.5h44.19v-89Zm39.43-55.06h44.2v143.7h-44.2ZM691.55,57.41h44.2v44.2h-44.2ZM576.34,269V125.33H532.5v22.33c-8.13-12.2-25.38-26.4-58.56-26.4-55.63,0-99.11,43.84-99.11,98.89s45.35,98.9,99.11,98.9c33.18,0,50.43-14.2,58.56-26.41V269Zm-59.14-67.83c0,33.17-26.41,57.65-59,57.65s-59-24.47-59-57.65,26.41-57.64,59-57.64,59,24.47,59,57.64m323.23-75.92H950.89v44H840.43ZM1000,136.82H923.34v18.56H1000Z"/>
                   </svg>
                 </div>
-                <div className="h-9 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <div className="h-9 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all float">
                   <svg className="h-full" viewBox="0 0 87.3 78" fill="currentColor">
                     <path d="m17.7 48.3c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8zm0 15.6c-3.1 0-5.8-2.7-5.8-5.8s2.7-5.8 5.8-5.8 5.8 2.7 5.8 5.8-2.7 5.8-5.8 5.8zm38.3-15.6c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8zm0 15.6c-3.1 0-5.8-2.7-5.8-5.8s2.7-5.8 5.8-5.8 5.8 2.7 5.8 5.8-2.7 5.8-5.8 5.8zm21.7-46.7-4.8-8.3c-1-1.3-2.7-2.2-4.4-2.2h-55c-1.8 0-3.4.8-4.4 2.2l-4.8 8.3c-1 1.6-1.3 3.6-1.3 5.5 0 5.4 4.4 9.8 9.8 9.8h2.2c-.1-.7-.1-1.3-.1-1.9 0-9.8 7.9-17.7 17.7-17.7s17.7 7.9 17.7 17.7c0 .7 0 1.3-.1 1.9h2.6c-.1-.7-.1-1.3-.1-1.9 0-9.8 7.9-17.7 17.7-17.7 1.5 0 3 .2 4.5.6-1.3-2.2-2-4.6-2-7.3 0-3.6 3.2-6.3 6.4-6.3 1.5 0 2.9.5 3.9 1.6 3.6 3.6 2.1 8 .5 10.2 1.8 1.9 2.9 4.3 3.3 7 3.5 1.6 5.8 5.2 5.8 9.2 0 .7 0 1.3-.1 1.9h2.2c5.4 0 9.8-4.4 9.8-9.8 0-2-.3-3.9-1.3-5.5zm-67.8 10.9c-6.1 0-11.8-3.5-14.5-9 0-.1 0-.1 0-.1-1.1-2.2-1.7-4.6-1.7-7.2 0-1.8.3-3.5 1-5.1l4.8-8.3c.3-.5 1-1 1.6-1h17c-4.6 4.3-7.5 10.5-7.5 17.3.2 5.4 1.7 10.3 4.3 13.4zm27.6 0c-3.5 0-6.4-2.9-6.4-6.4 0-3.5 2.9-6.4 6.4-6.4s6.4 2.9 6.4 6.4c0 3.5-2.9 6.4-6.4 6.4zm6.3-13.5c-1.9-1.9-4.5-3.1-7.4-3.1s-5.5 1.2-7.4 3.1c-1.9 1.9-3.1 4.5-3.1 7.4s1.2 5.5 3.1 7.4c.8.8 1.7 1.5 2.8 2-2.7-3-4.3-7.9-4.3-13.4 0-6.8 2.9-13 7.5-17.3h15.7c4.6 4.3 7.5 10.5 7.5 17.3 0 5.4-1.6 10.3-4.3 13.4 1-.5 1.9-1.2 2.7-2 1.9-1.9 3.1-4.5 3.1-7.4s-1.2-5.5-3.1-7.4c-2-2-4.6-3.1-7.5-3.1-2.7 0-5.3 1.1-7.3 3zm21.3 13.5c-3.5 0-6.4-2.9-6.4-6.4 0-3.5 2.9-6.4 6.4-6.4s6.4 2.9 6.4 6.4c0 3.5-2.8 6.4-6.4 6.4zm23.9 0h-2.7c2.6-3.1 4.1-8.1 4.1-13.4 0-6.8-2.9-13-7.5-17.3h5c.7 0 1.3.4 1.6 1l4.8 8.3c.6 1.6 1 3.3 1 5.1 0 9-7.3 16.3-16.3 16.3z"/>
                   </svg>
@@ -62,14 +65,17 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="lg:col-span-2 flex justify-center animate-[fade-in_0.3s_ease-out_0.6s]">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-20 blur-2xl"></div>
-              <div className="relative w-full h-full rounded-full bg-muted flex items-center justify-center overflow-hidden border-2 border-primary/10">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 animate-float">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/60 to-accent/60 opacity-30 blur-2xl"></div>
+              <div className="relative w-full h-full rounded-full bg-muted flex items-center justify-center overflow-hidden border-2 border-primary/20 hover:border-primary/50 transition-all duration-500">
                 <img 
                   src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
                   alt="Developer working on code" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                 />
+              </div>
+              <div className="absolute -right-5 -bottom-5 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold animate-pulse">
+                <span>JS</span>
               </div>
             </div>
           </div>
