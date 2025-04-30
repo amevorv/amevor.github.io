@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import mylogo from "@/assets/victoramevorlogo.png";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,7 +40,8 @@ const Navbar: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-md shadow-sm dark:bg-background/60' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-xl font-bold gradient-text">John<span className="text-primary">Smith</span></span>
+          {/* <img src={mylogo} alt="Logo" className="h-10 w-10 rounded-full" /> */}
+          {/* <span className="text-xl font-bold gradient-text">V. <span className="text-primary">A.</span></span> */}
         </a>
         
         <div className="hidden md:flex items-center gap-1">
@@ -67,7 +69,7 @@ const Navbar: React.FC = () => {
               </>
             )}
           </Button>
-          <Button className="ml-4">Get in Touch</Button>
+          <Button className="ml-4" onClick={() => window.location.href='#contact'}>Get in Touch</Button>
         </div>
         
         <button 
