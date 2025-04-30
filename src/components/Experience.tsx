@@ -4,27 +4,27 @@ import React from 'react';
 const experiences = [
   {
     id: 1,
-    role: "Senior Software Engineer",
-    company: "TechInnovate Solutions",
-    period: "2021 - Present",
-    description: "Lead development of enterprise-scale applications using microservices architecture. Engineered AI solutions for predictive analytics and process automation. Mentored junior developers and established best practices.",
+    domain: "Web / Mobile",
+    companies: "PurpleWave Auction Ltd, Devops Africa Limited, TechnipFMC, Tech231 Liberia ...",
+    role: "Software Development",
+    description: "Lead and collaborated with cross-functional teams to design, develop, and deploy enterprise-scale software solutions. Utilized Agile methodologies to manage project timelines and deliverables effectively. Developed and maintained cloud-based applications using AWS and Azure services. Designed and implemented RESTful APIs and microservices architecture for scalable applications.",
     technologies: ["React", "Node.js", "AWS", "Kubernetes", "TensorFlow"]
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "Digital Dynamics",
-    period: "2018 - 2021",
-    description: "Designed and implemented scalable cloud-native applications. Developed mobile applications using Flutter for cross-platform deployment. Created RESTful APIs and GraphQL endpoints for client applications.",
-    technologies: ["Flutter", "React", "Java", "Spring Boot", "Google Cloud"]
+    domain: "Robotics / Web",
+    companies: "Amalitech Services, Care R Us",
+    role: "Software Development Training",
+    description: "Conducted practical sessions to teach programming, robotics principles, and software tools. Designed and implemented training programs and materials tailored to software development and robotics. Stayed updated with the latest advancements in robotics and software development to incorporate them into training.",
+    technologies: ["Python", "JavaScript", "HTML", "CSS", "ROS"]
   },
   {
     id: 3,
-    role: "Mobile Application Developer",
-    company: "AppSphere Inc.",
-    period: "2016 - 2018",
-    description: "Built native iOS and Android applications for enterprise clients. Implemented CI/CD pipelines for streamlined deployment. Collaborated with UI/UX designers to create intuitive user experiences.",
-    technologies: ["Swift", "Kotlin", "RESTful APIs", "Firebase"]
+    domain: "Auto ML / Data Annotation",
+    companies: "Exohaven, AyaData",
+    role: "AI",
+    description: "Engineered AI solutions for predictive analytics and process automation. Developed and deployed machine learning models for various applications, including natural language processing and computer vision. Collaborated with cross-functional teams to integrate AI solutions into existing systems and processes.",
+    technologies: ["ReInforcement Learning", "TensorFlow", "OpenAPI"]
   },
 ];
 
@@ -35,7 +35,7 @@ const Experience: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Professional Experience</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            My professional journey spans various roles across different domains,
+            My professional journey encompasses various domains across different domains,
             giving me a diverse perspective on software development challenges.
           </p>
         </div>
@@ -56,11 +56,11 @@ const Experience: React.FC = () => {
               <div className="space-y-2">
                 <div>
                   <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                    {exp.period}
+                    {exp.role}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold">{exp.role}</h3>
-                <p className="text-foreground/70 font-medium">{exp.company}</p>
+                <h3 className="text-xl font-semibold">{exp.domain}</h3>
+                <p className="text-foreground/70 font-medium">{exp.companies}</p>
                 <p className="text-foreground/80 py-2">{exp.description}</p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {exp.technologies.map((tech) => (
