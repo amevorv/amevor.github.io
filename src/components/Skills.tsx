@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     {
       title: "AI & Machine Learning",
       icon: "🧠",
-      skills: ["TensorFlow", "PyTorch", "Natural Language Processing", "Computer Vision", "Reinforcement Learning"]
+      skills: ["TensorFlow", "Natural Language Processing", "Computer Vision", "Reinforcement Learning"]
     },
     {
       title: "Full Stack Development",
@@ -17,17 +17,17 @@ const Skills: React.FC = () => {
     {
       title: "Cloud & DevOps",
       icon: "☁️",
-      skills: ["AWS", "Google Cloud", "Docker", "Kubernetes", "CI/CD", "Terraform", "Jenkins", "Microservices"]
+      skills: ["AWS", "Google Cloud", "Docker", "Kubernetes", "CI/CD", "Cloud Formation", "Docker", "Microservices"]
     },
     {
       title: "Mobile Development",
       icon: "📱",
-      skills: ["Flutter", "React Native", "iOS (Swift)", "Android (Kotlin)", "Mobile UX Design", "Cross-platform Development"]
+      skills: ["Flutter", "Mobile UX Design", "Cross-platform Development"]
     },
     {
       title: "UI/UX Design",
       icon: "🎨",
-      skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping", "Usability Testing", "Responsive Design"]
+      skills: ["Figma", "Wireframing", "Prototyping", "Usability Testing", "Responsive Design"]
     },
   ];
 
@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Technical Expertise</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            With over 7 years of experience, I've developed expertise across multiple domains
+            Over the span of {new Date().getFullYear() - 2016} years, I've developed expertise across multiple domains
             and technologies, allowing me to tackle complex challenges with a holistic approach.
           </p>
         </div>
@@ -52,8 +52,8 @@ const Skills: React.FC = () => {
           <h3 className="text-xl font-medium mb-6 text-center">Languages & Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {[
-              "JavaScript", "TypeScript", "Python", "Java", "Kotlin", "Dart", 
-              "Swift", "Go", "HTML/CSS", "SQL", "NoSQL", "GraphQL", "REST", "WebSockets",
+              "JavaScript", "TypeScript", "Python", "Java", "Dart", 
+              "HTML/CSS", "SQL", "NoSQL", "GraphQL", "REST", "WebSockets",
               "React", "Node.js", "Express", "Spring Boot", "Flutter", "AWS", "GCP",
               "Docker", "Kubernetes", "Terraform", "CI/CD"
             ].map((tech) => (
