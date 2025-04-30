@@ -1,6 +1,12 @@
 
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import smartAIassistant from '@/assets/projects/smartassistant.png';
+import calleva from '@/assets/projects/calleva.png';
+import electconnect from '@/assets/projects/electconnect.png';
+import foodzup from '@/assets/projects/foodzup.png';
+import oxafrica from '@/assets/projects/ox.jpg';
+import lta from '@/assets/projects/manager.png';
 
 const projectCategories = ['All', 'AI', 'Full Stack', 'Cloud & DevOps', 'Mobile', 'UI/UX'];
 
@@ -8,52 +14,62 @@ const projects = [
   {
     id: 1,
     title: 'AI-Powered Content Generator',
-    description: 'A machine learning application that generates SEO-optimized content based on user inputs and industry trends.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+    description: 'A machine learning application that generates related content based on user inputs and domain knowledge.',
+    image: smartAIassistant,
     categories: ['AI', 'Full Stack'],
-    techStack: ['Python', 'TensorFlow', 'React', 'Node.js', 'MongoDB'],
-    liveDemo: 'https://example.com/demo',
-    githubRepo: 'https://github.com/username/ai-content-generator',
+    techStack: ['OpenAI API', 'Figma', 'React', 'Node.js'],
+    liveDemo: 'https://amevorv.github.io',
+    githubRepo: 'https://github.com/PurpleWave/smart-assistance',
   },
   {
     id: 2,
-    title: 'Cloud Deployment Pipeline',
-    description: 'An automated CI/CD pipeline that streamlines the deployment process for microservices-based applications.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    categories: ['Cloud & DevOps'],
-    techStack: ['AWS', 'Docker', 'Kubernetes', 'Jenkins', 'Terraform'],
-    liveDemo: 'https://example.com/demo',
-    githubRepo: 'https://github.com/username/cloud-deployment-pipeline',
+    title: 'Real-time Analytics Dashboard',
+    description: 'An interactive dashboard that provides real-time insights and visualization of complex data sets.',
+    image: electconnect,
+    categories: ['Full Stack', 'Mobile', 'UI/UX'],
+    techStack: ['React', 'Node.js', 'WebSockets', '.Net', 'Azure', 'Flutter', 'MySQL'],
+    liveDemo: 'https://amevorv.github.io',
+    githubRepo: 'https://github.com/Tech231Liberia/analytics-dashboard',
   },
   {
     id: 3,
-    title: 'Cross-Platform Mobile App',
-    description: 'A feature-rich mobile application that runs seamlessly on iOS and Android with a shared codebase.',
-    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80',
-    categories: ['Mobile', 'UI/UX'],
-    techStack: ['Flutter', 'Firebase', 'Bloc', 'Figma'],
-    liveDemo: 'https://example.com/demo',
-    githubRepo: 'https://github.com/username/cross-platform-app',
+    title: 'Cross-Platform Mobile Apps',
+    description: 'A feature-rich mobile applications that runs seamlessly on iOS and Android with a shared codebase.',
+    image: foodzup,
+    categories: ['Mobile', 'UI/UX', 'Cloud & DevOps'],
+    techStack: ['Flutter', 'Firebase', 'Figma', 'GCP', 'Linux'],
+    liveDemo: 'https://amevorv.github.io',
+    githubRepo: 'https://github.com/Chop-money.co/mobile-app',
   },
   {
     id: 4,
     title: 'Enterprise E-commerce Platform',
-    description: 'A scalable e-commerce solution with advanced features like real-time inventory management and AI-based recommendations.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-    categories: ['Full Stack', 'UI/UX'],
-    techStack: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Redis'],
-    liveDemo: 'https://example.com/demo',
-    githubRepo: 'https://github.com/username/ecommerce-platform',
+    description: 'A scalable e-commerce solution with advanced features like real-time inventory management and POS processing.',
+    image: calleva,
+    categories: ['Full Stack', 'UI/UX', 'Cloud & DevOps'],
+    techStack: ['MongoDB', 'React', 'Node', 'MicroServices', 'Express'],
+    liveDemo: 'https://amevorv.github.io/calleva',
+    githubRepo: 'https://github.com/Tuls-org/calleva',
   },
   {
     id: 5,
-    title: 'Real-time Analytics Dashboard',
-    description: 'An interactive dashboard that provides real-time insights and visualization of complex data sets.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
-    categories: ['Full Stack', 'AI', 'UI/UX'],
-    techStack: ['React', 'D3.js', 'Node.js', 'WebSockets', 'MongoDB'],
-    liveDemo: 'https://example.com/demo',
-    githubRepo: 'https://github.com/username/analytics-dashboard',
+    title: 'Process Management Platform',
+    description: 'A comprehensive dashboard for managing and visualizing complex processes in real-time.',
+    image: lta,
+    categories: ['Full Stack', 'UI/UX', 'Cloud & DevOps'],
+    techStack: ['React', 'Springboot', 'Java', 'Postgres', 'Docker'],
+    liveDemo: 'https://amevorv.github.io',
+    githubRepo: 'https://github.com/amevorv/allthrine_pages',
+  },
+  {
+    id: 6,
+    title: 'Agricultural Management Platform',
+    description: 'A web-based platform for managing agricultural processes, including equipment management and resource allocation.',
+    image: oxafrica,
+    categories: ['Full Stack', 'Cloud & DevOps', 'UI/UX'],
+    techStack: ['Github Actions', 'React', 'Lunacy'],
+    liveDemo: 'https://amevorv.github.io/oxafrica',
+    githubRepo: 'https://github.com/amevorv/oxafrica',
   },
 ];
 
