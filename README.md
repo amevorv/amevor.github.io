@@ -4,7 +4,7 @@
 I'm a tech enthusiast with a knack for **full stack development**, **AI wizardry**, and all things **cloudy** (the good kind—think Google Cloud, not the weather 🌥️). Whether it's crafting **mobile apps that pop**, **sleek animations that wow**, or building **scalable, rock-solid architectures**, I'm your go-to problem-solver. 
 
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=brumnet&show_icons=true&theme=tokyonight)  
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=amevorv&show_icons=true&theme=tokyonight)  
 ---
 
 ### 🛠️ My Tech Arsenal
@@ -29,14 +29,14 @@ Right now, I'm diving deep into **AI and cloud innovations**, working on project
 ---
 
 ### 📬 Let's Chat!
-- 🌐 [My Personal Website](brumnet.github.io)
-- 📧 Email: [victoramevor7@gmail.com](mailto:your-email@example.com)
+- 🌐 [My Personal Website](amevorv.github.io)
+- 📧 Email: [victoramevor7@gmail.com](mailto:victoramevor7@gmail.com)
 - 💼 LinkedIn: [Profile](https://www.linkedin.com/in/vicoyce/)
 
 ---
 
 ### 📊 GitHub Stats—Bragging Rights Edition
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=brumnet&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=amevorv&layout=compact&theme=tokyonight)
 
 ---
 
