@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import smartAIassistant from '@/assets/projects/smartassistant.png';
 import calleva from '@/assets/projects/calleva.png';
 import electconnect from '@/assets/projects/electconnect.png';
-// import foodzup from '@/assets/projects/foodzup.png';
+import foodzup from '@/assets/projects/foodzup.png';
 import oxafrica from '@/assets/projects/ox.jpg';
 import lta from '@/assets/projects/manager.png';
 
@@ -31,16 +31,16 @@ const projects = [
     liveDemo: 'https://amevorv.github.io',
     githubRepo: 'https://github.com/Tech231Liberia/analytics-dashboard',
   },
-  // {
-  //   id: 3,
-  //   title: 'Cross-Platform Mobile Apps',
-  //   description: 'A feature-rich mobile applications that runs seamlessly on iOS and Android with a shared codebase.',
-  //   image: foodzup,
-  //   categories: ['Mobile', 'UI/UX', 'Cloud & DevOps'],
-  //   techStack: ['Flutter', 'Firebase', 'Figma', 'GCP', 'Linux'],
-  //   liveDemo: 'https://amevorv.github.io',
-  //   githubRepo: 'https://github.com/Chop-money.co/mobile-app',
-  // },
+  {
+    id: 3,
+    title: 'Cross-Platform Mobile Apps',
+    description: 'A feature-rich mobile applications that runs seamlessly on iOS and Android with a shared codebase.',
+    image: foodzup,
+    categories: ['Mobile', 'UI/UX', 'Cloud & DevOps'],
+    techStack: ['Flutter', 'Firebase', 'Figma', 'GCP', 'Linux'],
+    liveDemo: 'https://amevorv.github.io',
+    githubRepo: 'https://github.com/Chop-money.co/mobile-app',
+  },
   {
     id: 4,
     title: 'Enterprise E-commerce Platform',
